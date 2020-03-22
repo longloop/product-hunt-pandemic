@@ -3,9 +3,9 @@ var router = express.Router();
 
 
 var home = require('./home');
-var aboutUs = require('./about-us');
 var contactUs = require('./contactUs');
-var submitOfferings = require('./submit-offerings');
+var aboutUs = require('./aboutUs');
+var submitOfferings = require('./submitOfferings');
 
 
 router.use('/', home);
