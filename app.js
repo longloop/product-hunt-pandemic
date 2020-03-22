@@ -3,6 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongojs = require('mongojs');
+
+// setup db
+var db = mongojs('productHuntPandemic');
+//var offerings = db.collection('offerings');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
