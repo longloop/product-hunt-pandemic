@@ -120,14 +120,20 @@ h1 {
   z-index: 1;
 }
 
+/* .cards p{
+  min-height: 163px;
+} */
+
 .cards .card {
   background: white;
   padding: 15px;
   border: 8px solid #fdc650;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   box-shadow: -1.3em 1.3em 0 0 white;
   width: 95%;
   margin-left: 20px;
+  margin-bottom: 43px;
+  min-height: 370px;
 }
 
 .cards .card .top-bar h3{
