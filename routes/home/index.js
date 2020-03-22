@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
     db.collection("offerings").find().limit(5).toArray(function (err, result) {
       if (err) throw err;
       db.close();
-      res.render('home', { title: 'Lits of Offerings', data: JSON.stringify(result)});
+      res.render('home', { title: 'Lits of Offerings', data: result});
     });
   });
 });
