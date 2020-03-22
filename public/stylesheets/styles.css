@@ -38,6 +38,28 @@ h1 {
   line-height: 0.58;
   letter-spacing: normal;
   color: #2f29ff;
+  margin-top: 44px;
+}
+
+.submit-listing{
+  width: 167px;
+  /* height: 14px; */
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  /* line-height: normal; */
+  letter-spacing: normal;
+  color: #2f29ff;
+  border: 2px blue solid;
+  padding: 4px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.margin-update {
+  margin-left: 16px;
 }
 
 .main-inner {
@@ -84,6 +106,7 @@ h1 {
   margin: 0;
   background: white;
   color: #2f29ff;
+  font-size: 40px;
 }
 
 .tags{
