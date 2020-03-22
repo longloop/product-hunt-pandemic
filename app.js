@@ -9,8 +9,11 @@ var mongojs = require('mongojs');
 var db = mongojs('productHuntPandemic');
 //var offerings = db.collection('offerings');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var indexRouter = require('./routes');
+// var submitOfferingsRouter = require('./routes/submit-offerings');
+// var conatctUsRouter = require('./routes/contact-us');
+// var aboutUsRouter = require('./routes/about-us');
+// var usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -25,7 +28,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+// app.use('/about-us', aboutUsRouter);
+// app.use('/submit-offerings', submitOfferingsRouter);
+// app.use('/contact-us', conatctUsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
